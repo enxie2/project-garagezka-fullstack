@@ -28,7 +28,7 @@ const navItems: { label: string; id: ActivePage; icon: React.ReactNode; href: st
   { label: 'Dashboard',      id: 'dashboard',  icon: <GridIcon />,        href: '/dashboard' },
   { label: 'Booking Servis', id: 'booking',    icon: <CalendarNavIcon />, href: '/booking'   },
   { label: 'Kendaraan Saya', id: 'kendaraan',  icon: <BikeNavIcon />,     href: '/kendaraan' },
-  { label: 'Riwayat Servis', id: 'riwayat',    icon: <HistoryNavIcon />,  href: '#'          },
+  { label: 'Riwayat Servis', id: 'riwayat',    icon: <HistoryNavIcon />,  href: '/riwayat'   },
   { label: 'Notifikasi',     id: 'notifikasi', icon: <BellIcon />,        href: '#'          },
   { label: 'Profil',         id: 'profil',     icon: <UserNavIcon />,     href: '#'          },
 ]
