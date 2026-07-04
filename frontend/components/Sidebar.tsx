@@ -30,7 +30,7 @@ const navItems: { label: string; id: ActivePage; icon: React.ReactNode; href: st
   { label: 'Kendaraan Saya', id: 'kendaraan',  icon: <BikeNavIcon />,     href: '/kendaraan'  },
   { label: 'Riwayat Servis', id: 'riwayat',    icon: <HistoryNavIcon />,  href: '/riwayat'    },
   { label: 'Notifikasi',     id: 'notifikasi', icon: <BellIcon />,        href: '/notifikasi' },
-  { label: 'Profil',         id: 'profil',     icon: <UserNavIcon />,     href: '#'           },
+  { label: 'Profil',         id: 'profil',     icon: <UserNavIcon />,     href: '/profil'     },
 ]
 
 /* ─── Komponen ────────────────────────────────────────── */
