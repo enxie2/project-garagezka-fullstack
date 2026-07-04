@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import Sidebar from '@/components/Sidebar'
 import {
   ChevronDownIcon,
@@ -257,9 +258,12 @@ export default function BookingServisPage() {
               </div>
 
               {/* Tombol CTA */}
-              <button className="mt-5 w-full rounded-xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-600/30 transition hover:bg-red-700 active:scale-95">
+              <Link
+                href="/booking/success"
+                className="mt-5 block w-full text-center rounded-xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-600/30 transition hover:bg-red-700 active:scale-95"
+              >
                 Lanjut Booking
-              </button>
+              </Link>
 
               <p className="mt-3 text-center text-[0.65rem] leading-relaxed text-gray-600">
                 Dengan mengklik tombol di atas, Anda menyetujui syarat dan ketentuan layanan GARAGEZKA.

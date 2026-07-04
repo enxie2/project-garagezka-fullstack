@@ -184,3 +184,11 @@ export const MotorcycleSmallIcon = () => (
     <path d="M19 7c0-1.1-.9-2-2-2h-3l2 4h1.8l1.2-1.18V7zm-5.2 4l-2-4H7l-2 3 1.5 3H8c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 1.66 1.34 3 3 3s3-1.34 3-3h1v-3h-3.2zM11 15.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm8 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
   </svg>
 )
+
+export const CheckCircleIcon = () => (
+  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+    <polyline points="22,4 12,14.01 9,11.01" />
+  </svg>
+)
+
