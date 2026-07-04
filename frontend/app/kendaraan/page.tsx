@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Sidebar from '@/components/Sidebar'
 import {
   MotorcycleIcon,
@@ -89,7 +90,10 @@ export default function KendaraanPage() {
             ))}
 
             {/* Card 3 (Tambah Kendaraan Baru) */}
-            <div className="flex min-h-[220px] cursor-pointer flex-col items-center justify-center rounded-3xl border border-dashed border-[#262626] bg-[#111111]/30 p-6 text-center transition hover:border-red-500/40 hover:bg-[#fa1818]/5">
+            <Link
+              href="/kendaraan/tambah"
+              className="flex min-h-[220px] cursor-pointer flex-col items-center justify-center rounded-3xl border border-dashed border-[#262626] bg-[#111111]/30 p-6 text-center transition hover:border-red-500/40 hover:bg-[#fa1818]/5"
+            >
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#222222] text-gray-400">
                 <PlusIcon />
               </div>
@@ -99,7 +103,7 @@ export default function KendaraanPage() {
               <p className="mt-1.5 text-xs text-gray-500">
                 Daftarkan motor lainnya
               </p>
-            </div>
+            </Link>
 
           </div>
 
