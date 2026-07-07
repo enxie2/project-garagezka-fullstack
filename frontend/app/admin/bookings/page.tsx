@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import AdminSidebar from '@/components/AdminSidebar'
 import { ChevronDownIcon } from '@/components/icons'
 
@@ -112,7 +113,11 @@ export default function AdminBookings() {
                     return (
                       <tr key={b.id} className="border-b border-[#1f1f1f] last:border-0 relative">
                         {/* Kode */}
-                        <td className="py-4 font-mono font-bold text-gray-200">{b.id}</td>
+                        <td className="py-4 font-mono font-bold">
+                          <Link href={`/admin/bookings/${b.id}`} className="text-red-500 hover:text-red-400 hover:underline">
+                            {b.id}
+                          </Link>
+                        </td>
                         {/* Pelanggan */}
                         <td className="py-4 font-medium text-white">{b.customer}</td>
                         {/* Motor */}
@@ -133,9 +138,16 @@ export default function AdminBookings() {
                             {b.status}
                           </span>
                         </td>
-                        {/* Actions (Dropdown status changer) */}
-                        <td className="py-4 text-right relative">
-                          <div className="inline-block text-left">
+                        {/* Actions (Dropdown status changer & Edit Work Order) */}
+                        <td className="py-4 text-right">
+                          <div className="flex justify-end gap-2 relative">
+                            <Link
+                              href={`/admin/bookings/${b.id}`}
+                              className="rounded-lg border border-[#2c2c2c] px-3 py-1.5 text-xs font-semibold text-gray-300 hover:border-red-500/50 hover:text-red-400 transition"
+                            >
+                              Detail Kerja
+                            </Link>
+                            
                             <button
                               onClick={() => setActiveMenuId(activeMenuId === b.id ? null : b.id)}
                               className="flex items-center gap-1.5 rounded-lg border border-[#2c2c2c] px-3 py-1.5 text-xs font-semibold text-gray-400 hover:border-[#444444] hover:text-white transition"
