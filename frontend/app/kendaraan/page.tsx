@@ -79,9 +79,12 @@ export default function KendaraanPage() {
 
                 {/* Card Footer (Actions) */}
                 <div className="mt-8 flex gap-2 border-t border-[#222222] pt-4">
-                  <button className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#2c2c2c] bg-transparent text-gray-400 transition hover:border-[#444444] hover:text-white active:scale-95">
+                  <Link
+                    href={`/kendaraan/edit/${motor.id}`}
+                    className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#2c2c2c] bg-transparent text-gray-400 transition hover:border-[#444444] hover:text-white active:scale-95"
+                  >
                     <PencilIcon />
-                  </button>
+                  </Link>
                   <button className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#2c2c2c] bg-transparent text-gray-400 transition hover:border-red-500/50 hover:text-red-400 active:scale-95">
                     <TrashIcon />
                   </button>
