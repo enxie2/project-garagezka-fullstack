@@ -61,12 +61,12 @@ export default function RegisterPage() {
                 Saya menyetujui <span className="text-white underline decoration-red-500">Syarat & Ketentuan</span> serta <span className="text-white underline decoration-red-500">Kebijakan Privasi</span> GARAGEZKA.
               </label>
             </div>
-            <button
-              type="button"
-              className="w-full rounded-2xl bg-red-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-red-500/20 transition hover:bg-red-600"
+            <Link
+              href="/login"
+              className="inline-flex w-full items-center justify-center rounded-2xl bg-red-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-red-500/20 transition hover:bg-red-600"
             >
               DAFTAR
-            </button>
+            </Link>
           </form>
 
           <div className="mt-6 text-center text-sm text-gray-400">

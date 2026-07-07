@@ -44,6 +44,17 @@ export default function LoginPage() {
             >
               MASUK
             </Link>
+            <div className="relative flex py-2 items-center">
+              <div className="flex-grow border-t border-gray-800/80"></div>
+              <span className="flex-shrink mx-4 text-gray-600 text-xs">atau</span>
+              <div className="flex-grow border-t border-gray-800/80"></div>
+            </div>
+            <Link
+              href="/admin/dashboard"
+              className="inline-flex w-full items-center justify-center rounded-2xl border border-gray-800 bg-transparent px-5 py-2.5 text-xs font-semibold text-gray-400 transition hover:border-red-500/50 hover:text-white"
+            >
+              Masuk sebagai Admin &rarr;
+            </Link>
           </form>
 
           <div className="mt-6 text-center text-sm text-gray-400">
