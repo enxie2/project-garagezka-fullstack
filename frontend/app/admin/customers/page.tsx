@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import AdminSidebar from '@/components/AdminSidebar'
 
 /* ─── Mock Data Customers ────────────────────────── */
@@ -80,9 +81,12 @@ export default function AdminCustomers() {
                       <td className="py-4 text-center font-bold text-gray-200">{c.totalMotor} Unit</td>
                       <td className="py-4 text-center font-bold text-red-500">{c.totalServis}x</td>
                       <td className="py-4 text-right">
-                        <button className="rounded-lg border border-[#2c2c2c] px-3 py-1.5 text-xs font-semibold text-gray-400 hover:border-[#444444] hover:text-white transition">
+                        <Link
+                          href={`/admin/customers/${c.id}`}
+                          className="rounded-lg border border-[#2c2c2c] px-3 py-1.5 text-xs font-semibold text-gray-400 hover:border-[#444444] hover:text-white transition"
+                        >
                           Detail Pelanggan
-                        </button>
+                        </Link>
                       </td>
                     </tr>
                   ))}

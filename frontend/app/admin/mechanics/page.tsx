@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import AdminSidebar from '@/components/AdminSidebar'
 import { WrenchIcon, PlusIcon } from '@/components/icons'
 
@@ -42,10 +43,13 @@ export default function AdminMechanics() {
           </div>
           
           {/* Add Mechanic Button */}
-          <button className="flex items-center gap-2 rounded-xl bg-red-600 px-4 py-2.5 text-xs font-bold text-white shadow-lg shadow-red-600/20 hover:bg-red-700 transition active:scale-95">
+          <Link
+            href="/admin/mechanics/tambah"
+            className="flex items-center gap-2 rounded-xl bg-red-600 px-4 py-2.5 text-xs font-bold text-white shadow-lg shadow-red-600/20 hover:bg-red-700 transition active:scale-95"
+          >
             <PlusIcon />
             Tambah Mekanik Baru
-          </button>
+          </Link>
         </header>
 
         {/* Content Container */}
