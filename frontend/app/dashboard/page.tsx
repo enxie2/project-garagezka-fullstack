@@ -119,9 +119,12 @@ export default function DashboardPage() {
                   </div>
                 </div>
               </div>
-              <button className="mt-4 w-full rounded-xl border border-[#2a2a2a] py-3 text-sm font-medium text-gray-300 transition hover:border-red-500/50 hover:text-red-400">
+              <Link
+                href="/notifikasi"
+                className="mt-4 block w-full rounded-xl border border-[#2a2a2a] py-3 text-center text-sm font-medium text-gray-300 transition hover:border-red-500/50 hover:text-red-400"
+              >
                 Lihat Semua Notifikasi
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -129,13 +132,13 @@ export default function DashboardPage() {
           <div className="rounded-2xl border border-[#1e1e1e] bg-[#191919] p-6">
             <div className="mb-5 flex items-center justify-between">
               <h3 className="text-base font-semibold">Riwayat Servis</h3>
-              <a
-                href="#"
+              <Link
+                href="/riwayat"
                 className="flex items-center gap-1.5 text-sm font-medium text-red-400 transition hover:text-red-300"
               >
                 Lihat Semua
                 <ExternalLinkIcon />
-              </a>
+              </Link>
             </div>
 
             {/* Table Header */}

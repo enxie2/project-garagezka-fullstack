@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Sidebar from '@/components/Sidebar'
 import {
   MotorcycleIcon,
@@ -156,9 +157,10 @@ export default function RiwayatServisPage() {
               }
 
               return (
-                <div
+                <Link
                   key={item.id}
-                  className="relative flex flex-col md:flex-row md:items-center justify-between rounded-2xl border border-[#1e1e1e] bg-[#191919] p-5 shadow-sm transition hover:border-[#2a2a2a] gap-4"
+                  href={`/riwayat/${item.id}`}
+                  className="relative flex flex-col md:flex-row md:items-center justify-between rounded-2xl border border-[#1e1e1e] bg-[#191919] p-5 shadow-sm transition hover:border-[#2a2a2a] hover:bg-[#1e1e1e] cursor-pointer gap-4"
                 >
                   
                   {/* Left Section (Icon + Details) */}
@@ -216,7 +218,7 @@ export default function RiwayatServisPage() {
 
                   </div>
 
-                </div>
+                </Link>
               )
             })}
           </div>
